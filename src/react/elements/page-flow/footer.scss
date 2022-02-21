@@ -11,7 +11,7 @@ footer {
 	
 	.frc-logo-horizontal-rule {
 		
-		margin-bottom: 8px;
+		margin-bottom: 16px;
 		
 	}
 	
@@ -30,10 +30,44 @@ footer {
 				flex: 1;
 				display: inline-block;
 				font-size: 0.7em;
+				opacity: 0.5;
+				transition: 0.25s opacity ease;
+				
+				@keyframes heart-beat {
+					
+					0%, 30%, 60% { transform: scale(2); }
+					15%, 45%, 75% { transform: scale(0.95); }
+					
+				}
+				
+				&:hover {
+					
+					opacity: 1;
+					
+					a {
+						
+						text-decoration: underline;
+						
+					}
+					
+					.heart {
+						
+						animation: heart-beat 1.5s infinite;
+					
+					}
+					
+				}
 				
 				a {
 					
 					color: #8CA9EE;
+					text-decoration: none;
+					
+					&:hover {
+
+						color: var(--color-first-blue);
+
+					}
 					
 				}
 				
