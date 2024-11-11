@@ -23,7 +23,7 @@ export class MeetTheLeadsPage extends React.Component<Props, State> {
 	public static readonly LEADS: LeadProfile[] = [
 		{
 			name: "Grady Luyt",
-			title: "Tech Captain",
+			title: "Gone",
 			bio: <p>
 				This is Grady’s fourth year on the team, and he’s looking forward to the 2022 build season. With
 				2020 being cut short and 2021 being virtual, Grady has big goals for the team this year with it
