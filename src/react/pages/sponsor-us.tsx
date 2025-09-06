@@ -26,7 +26,7 @@ export class SponsorUs extends React.Component<Props, State> {
 					<i>To sponsor/donate to our team, please visit the link below, and add <span className="team-name">
 					RAPTORS Team 1711</span> in the program designation box or memo line if you are sending a check.</i>
 				</p>
-				<a href="https://bit.ly/3uyeQmP"
+				<a href="https://docs.google.com/forms/d/1qXTrBuLf6QTeViidB6IWpQNK5V_pJfBURjVZpeL5OJU/edit "
 				   target="_blank"
 				   rel="noreferrer">Click Here to Sponsor FRC Team 1711 - The RAPTORS</a>
 			</Page>
