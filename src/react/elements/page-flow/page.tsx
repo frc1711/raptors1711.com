@@ -14,7 +14,8 @@ export type Props = Readonly<{
 	preHeader?: React.ReactNode,
 	postFooter?: React.ReactNode,
 	centered: boolean,
-	fullWidthContent: boolean
+	fullWidthContent: boolean,
+	children?: React.ReactNode,
 }>;
 
 export type State = Readonly<{}>;
@@ -41,7 +42,7 @@ export class Page extends React.Component<Props, State> {
 				{this.props.preHeader ?? null}
 				<Header />
 				<main>
-					{this.props.children}
+					{this.props?.children}
 				</main>
 				<Footer />
 				{this.props.postFooter ?? null}

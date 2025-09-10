@@ -6,7 +6,8 @@ export type Props = {
 	imageAlt: string
 	reverse?: boolean,
 	className?: string
-	id?: string
+	id?: string,
+	children?: ReactNode,
 };
 
 type State = {};
