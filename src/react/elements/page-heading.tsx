@@ -12,7 +12,9 @@
 import "./page-heading.scss";
 import React from "react";
 
-export type Props = Readonly<{}>;
+export type Props = Readonly<{
+	children?: React.ReactNode;
+}>;
 export type State = Readonly<{}>;
 
 export class PageHeading extends React.Component<Props, State> {
@@ -20,7 +22,7 @@ export class PageHeading extends React.Component<Props, State> {
 	public render(): React.ReactNode {
 		
 		return (
-			<h1 className="page-heading">{this.props.children}</h1>
+			<h1 className="page-heading">{this.props?.children}</h1>
 		);
 		
 	}

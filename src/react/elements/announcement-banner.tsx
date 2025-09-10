@@ -7,7 +7,9 @@
 import "./announcement-banner.scss";
 import React from "react";
 
-export type Props = Readonly<{}>;
+export type Props = Readonly<{
+	children?: React.ReactNode;
+}>;
 export type State = Readonly<{}>;
 
 export class AnnouncementBanner extends React.Component<Props, State> {
@@ -16,7 +18,7 @@ export class AnnouncementBanner extends React.Component<Props, State> {
 		
 		return (
 			<div className="announcement-banner">
-				<p>{this.props.children}</p>
+				<p>{this.props?.children}</p>
 			</div>
 		);
 		
