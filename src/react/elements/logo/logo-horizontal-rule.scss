@@ -1,0 +1,24 @@
+.logo-horizontal-rule {
+	
+	height: 1.5rem;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	//z-index: 100;
+	
+	hr {
+		
+		flex: 1;
+		
+	}
+	
+	img {
+		
+		height: 150%;
+		margin: 0 0rem;
+		background: var(--color-bg)
+		
+	}
+	
+}

@@ -4,11 +4,14 @@ import mentorImageTrevorSears from "../../assets/images/mentors/trevor-sears.jpg
 import mentorImageJeremiahStieve from "../../assets/images/mentors/jeremiah-stieve.jpg";
 import mentorImageRussRiker from "../../assets/images/mentors/russ-riker.jpg";
 import mentorImageEricSmith from "../../assets/images/mentors/eric-smith.jpg";
+import mentorImageDarrylGreathouse from "../../assets/images/mentors/darryl-greathouse.jpeg";
+import mentorImageRyanTrombly from "../../assets/images/mentors/ryan-trombly.png";
+import mentorImageMarjie from "../../assets/images/mentors/marjie-killingsworth-bonecutter.png";
 import React from "react";
 import { Page } from "../elements/page-flow/page";
 import { Props, State } from "./home";
-import { PageHeading } from "../elements/page-heading";
-import { TextImageBox } from "../elements/text-image-box";
+import { PageHeading } from "../elements/page-items/page-heading";
+import { TextImageBox } from "../elements/page-items/text-image-box";
 import { sanitizeStringToID } from "../../util/sanitize-string-to-id";
 
 type MentorProfile = {
@@ -72,6 +75,37 @@ export class MeetTheMentorsPage extends React.Component<Props, State> {
 				include pinball and repairing old computers.
 			</p>,
 			image: mentorImageRussRiker
+		},
+		{
+			name: "Marjie Killingsworth-Bonecutter",
+			title: "Strategy, Scouting, & Programming Mentor",
+			bio: <p>
+				Marjie started as a volunteer and referee in Kansas City in 2017. For the last 7 years she has been a
+				mentor in Scouting and Strategy. In her free time, Marjie likes to do all things crafts and spend time on the curling ice.
+			</p>,
+			image: mentorImageMarjie
+		},
+		{
+			name: "Darryl Greathouse",
+			title: "Programming & Mechanical Mentor",
+			bio: <p>
+					A newer mentor on the RAPTORS, Darryl has spent over 10 years in FIRST Robotics between FRC and FTC and 
+					has 30 years of engineering & software experience. He's a strong Java programmer, expirienced Onshape 
+					designer, and teaches at Northwestern Michigan College. Outside of robotics, Darryl enjoys tending to 
+					his chickens and dogs as well as chopping firewood.
+				</p>,
+			image: mentorImageDarrylGreathouse
+		},
+		{
+			name: "Ryan Trombly",
+			title: "Programming & Mechanical Mentor",
+			bio: <p>
+					This is Ryan's 3rd season with the RAPTORS. He primarily assists with scouting/strategy and branding 
+					development, but is always willing to lend a hand in other areas. Ryan is currently a Senior at Michigan 
+					State studying hospitality management. In his free time, he enjoys spending time with friends and family 
+					as well as exploring new places.
+				</p>,
+			image: mentorImageRyanTrombly
 		},
 	];
 	

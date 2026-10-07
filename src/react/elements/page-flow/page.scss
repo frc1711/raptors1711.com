@@ -1,14 +1,12 @@
-@import "../../../assets/styles/variables";
+@import "../../../assets/styles/_variables";
 
 .page {
 	
 	height: 100%;
-	//padding: 0 20px;
-	overflow: auto;
-
+	
 	min-height: 100vh;
 
-	background-color: var(--color-bg);
+	background: var(--r-light-gradient);
 	color: var(--color-fg);
 	
 	&.centered {
@@ -22,12 +20,10 @@
 	main {
 		
 		flex: 1;
-		
 		width: 100%;
-		max-width: var(--page-width);
-		padding: 10px 10px;
 		
 	}
+
 	
 	&.full-width main {
 		
@@ -41,8 +37,10 @@
 		color: var(--color-bg);
 		
 	}
-	
-	a {
+	// Hi future dev, as I was adding the global styles for my index.scss, the buttons would 
+	// display purple as visited regardless of my stylesheet, sorry this is a lazy solution,
+	// but it works for now and I don't think anyone will miss the purple links. :)
+	/*a { 
 		
 		color: #AFAFFA;
 		
@@ -52,6 +50,6 @@
 			
 		}
 		
-	}
+	}*/
 	
 }

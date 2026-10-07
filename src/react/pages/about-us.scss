@@ -1,40 +1,49 @@
+@import "/src/assets/styles/variables";
+
 .page-about-us main {
-	
+	margin: 0 auto;
+
 	display: flex;
 	flex-direction: column;
-	align-items: left;
+	align-items: center;
 
-	p {
-		
-		margin-bottom: 20px;
-		text-indent: 50px;
-		text-align: left;
-		
-		
-	}
+	.content {
+		width: min(90%, var(--page-width));
 
-	img {
-		align-self: center;
-		max-width: 80%;
-		max-height: 650px;
-		border: 5px solid transparent;
-		outline: 2px solid white;
-		margin-bottom: 30px;
-		border-radius: 30px;
-		
-	}
+		.basic-h2 {
+			max-width: 900px;
+			margin: 45px auto 15px;
 
-	ul {
-		align-self: center;
-		font-weight: bolder;
-		list-style-type: "➤";
-		//text-align: left;
-		font-size: 1.1rem;
-		line-height: 1.5;
+			&:first-child {
+				margin-top: 10px;
+			}
+		}
 
-		li {
-			padding-left: 6px;
+		p {
+			max-width: 900px;
+			margin: 0 auto 25px;
+
+			font-size: 1rem;
+			line-height: 1.7;
+			text-align: left;
 		}
 	}
-	
+}
+
+@media (max-width: 700px) {
+	.page-about-us main {
+		.content {
+			width: 92%;
+
+			.basic-h2 {
+				margin-top: 35px;
+				font-size: 2rem;
+			}
+
+			p {
+				font-size: 0.95rem;
+				line-height: 1.6;
+			}
+		}
+	}
 }
